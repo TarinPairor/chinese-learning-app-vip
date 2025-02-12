@@ -1,20 +1,20 @@
 import { createSignal } from "solid-js";
 import solidLogo from "./assets/solid.svg";
 import viteLogo from "/vite.svg";
-import { ElevenLabsClient } from "elevenlabs";
+// import { ElevenLabsClient } from "elevenlabs";
 import "./App.css";
 
 function App() {
   const [count, setCount] = createSignal(0);
-  const client = new ElevenLabsClient();
+  // const client = new ElevenLabsClient({ apiKey: "YOUR_API_KEY" });
 
-  const res = async () =>
-    client.textToSpeech.convert(import.meta.env.VITE_SOME_KEY, {
-      output_format: "mp3_44100_128",
-      text: "The first move is what sets everything in motion.",
-      model_id: "eleven_multilingual_v2",
-    });
-  console.log(res);
+  // const res = async () =>
+  //   client.textToSpeech.convert(import.meta.env.VITE_SOME_KEY, {
+  //     output_format: "mp3_44100_128",
+  //     text: "The first move is what sets everything in motion.",
+  //     model_id: "eleven_multilingual_v2",
+  //   });
+  // console.log(res);
 
   return (
     <>
